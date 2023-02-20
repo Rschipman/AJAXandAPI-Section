@@ -51,13 +51,19 @@
 //     console.log("Error!", e);
 //   });
 
-const getStarWarsPerson = async (id) => {
-  try {
-    const res = await axios.get(`https://swapi.dev/api/people/${id}/`);
-    console.log(res.data);
-  } catch (e) {
-    console.log("Error!", e);
-  }
-};
+// const getStarWarsPerson = async (id) => {
+//   try {
+//     const res = await axios.get(`https://swapi.dev/api/people/${id}/`);
+//     console.log(res.data);
+//   } catch (e) {
+//     console.log("Error!", e);
+//   }
+// };
 
-getStarWarsPerson(4);
+// getStarWarsPerson(4);
+
+const getDadJoke = async () => {
+  const res = await axios.get("https://icanhazdadjoke.com/");
+  console.log(res);
+};
+getDadJoke();
